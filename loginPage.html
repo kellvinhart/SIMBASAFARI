@@ -1,0 +1,109 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form </title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image : url("data:image/jpeg;base64,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");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-page {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+.form {
+  position: relative;
+  filter: drop-shadow(0 0 2px #000000);
+  border-radius: 5px;
+  width: 360px;
+  height: 420px;
+  background-color: transparent;
+  padding: 40px;
+}
+.form img {
+  position: absolute;
+  height: 20px;
+  top: 230px;
+  right: 60px;
+  cursor: pointer;
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  margin: 15px 0;
+  padding: 15px;
+  font-size: 14px;
+}
+.form input:focus {
+  box-shadow: 0 0 5px 0 rgba(106, 98, 210);
+}
+span {
+  color: red;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.form button {
+  outline: 0;
+  background: maroon;
+  width: 100%;
+  border: 0;
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: black;
+  color: #fff;
+}
+.message {
+  margin: 15px 0;
+  text-align: center;
+}
+.form .message a {
+  font-size: 14px;
+  color: wheat;
+  text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form " action="file:///C:/Users/KELVIN/Documents/SIMBA%20SAFARIS/simbaSafaris.html" target="_blank">
+                <h2 style="color: #f2f2f2;">SIMBA SAFARIS ACCOUNT</h2>
+                <input type="text" required placeholder="Username" id="user" autocomplete="off" />
+                <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass"
+                    autocomplete="off" />
+                <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
+                    onclick="show()" id="showimg">
+                <span id="vaild-pass"></span>
+                <button type="submit">SIGN IN</button>
+                <p class="message"><a href="#">Forgot your password?</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="C:\Users\KELVIN\Documents\SIMBA SAFARIS\javscripLogin.js"></script>
+</body>
+</html>

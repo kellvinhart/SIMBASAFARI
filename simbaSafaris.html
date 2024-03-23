@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width">
+        <meta name="description" content="">
+        <meta name="author" content="Kelvin Kibet">
+
+        <title>Simba Adventure tours</title>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+                <style>
+                    body {font-family: Arial, Helvetica, sans-serif;
+                        margin: 0;
+                    }
+                    .header{
+                        padding: 40px;
+                        text-align: center;
+                        background: black;
+                        color: whitesmoke;
+                        font-size: 20px ;
+                    }
+                    .content {
+                        background-color: #ddd;
+                        padding: 20px;}
+                </style>
+                 <style>
+                    .dropbtn {
+                      background-color: wheat;
+                      color: black;
+                      padding: 16px;
+                      font-size: 16px;
+                      border: none;
+                      cursor: pointer;
+                    }
+                    
+                    .dropbtn:hover, .dropbtn:focus {
+                      background-color: maroon;
+                      color: #ddd;
+                    }
+                    
+                    .dropdown {
+                        float: right;
+                      position: relative;
+                      display: inline-block;
+                    }
+                    
+                    .dropdown-content {
+                      display: none;
+                      position: absolute;
+                      background-color: #f1f1f1;
+                      min-width: 160px;
+                      overflow: auto;
+                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                      right: 0;
+                      z-index: 1;
+                    }
+                    
+                    .dropdown-content a {
+                      color: black;
+                      padding: 12px 16px;
+                      text-decoration: none;
+                      display: block;
+                    }
+                    
+                    .dropdown a:hover {background-color: #ddd;}
+                    
+                    .show {display: block;}
+                    </style>
+                 <style>
+            body {
+              margin: 1;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .topnav {
+              overflow: hidden;
+              background-color: maroon;
+            }
+            
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 20px 22px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            
+            .topnav a:hover {
+              background-color: #090401;
+              color: whitesmoke;
+            }
+            
+            .topnav a.active {
+              background-color: wheat;
+              color: black;
+            }
+            </style>
+            </head>
+            <body>
+            <div class="topnav">
+              <a class="active" href="#home">Home</a>
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>             
+            </div>
+            <body style="background-color:black;">
+
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">MENU</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">PROFILE</a>
+                    <a href="#about">My TOUR</a>
+                    <a href="#contact">CONTACT US</a>
+                  </div>
+                </div>
+                
+                <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+                
+                </body>
+        <body>
+            <div class = "header">
+                <h1>SIMBA SAFARIS</h1>
+                <h2>GREAT AFRICAN ADVENTURES</h2>               
+            </div>
+            <div class="content">
+                <h3>WELCOME TO SIMBA SAFARIS</h3>
+                <p>Simba Safaris offers a wide range of services. From booking for you a hotel with accomodation, to assigning you a tour guide and a driver take you around amazing places in Kenya. OOh! and since Simba Safaris gives you memories you won't like forget, you get a photographer to ride along, Capturing escuisite pictures for your gallery.</p>
+                <p>Register with Simba Safaris to easily get you a profile with a schedule of the places to visit. Also get an opportunity to choose the type of room of your choice which suits your preference.</p>
+               
+            </div>
+        </body>
+        <footer>
+
+        </footer>
+
+    </body>
+</html>
